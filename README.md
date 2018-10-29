@@ -3,6 +3,8 @@
 The code is based on a post of Yash Patel.
 
 URL: https://towardsdatascience.com/reinforcement-learning-w-keras-openai-actor-critic-models-f084612cfd69
+
+
 I changed some logical details and chose pytorch instead of tensorflow, also environment differs, that required changes as well.
 
 
