@@ -11,7 +11,7 @@ class ActorCritic:
         self.env = env
         self.learning_rate = 0.001
         self.epsilon = 1.0
-        self.epsilon_decay = 1.0
+        self.epsilon_decay = 0.9999
         self.gamma = .99
         self.tau = .125
 
@@ -177,7 +177,6 @@ def main(num_trials=1000, trial_len=500):
 
     for i in range(num_trials):
         cur_state = env.reset()
-        actor_critic.epsilon = 1/np.log(i+np.e)
         for t in range(trial_len):
             r = 0
 
